@@ -143,6 +143,12 @@ function postAnswer(){
         result_p3.innerHTML = txt3;
         p.append(result_p3);
 
+        let result_p4 = document.createElement('p');
+        let txt4 = 'Baseado em nossa conscientização atual, nossa previsão é que o nível do oceano aumente ' + resultado_atual.nivel + ' m e a temperatura aumente ' + resultado_atual.temperatura + ' °C';
+        result_p4.innerHTML = txt4;
+        p.append(result_p4);
+
+
         document.getElementById("island_image").src = "imgs/island" + parseInt(resultado_atual.total_impacto) + ".png";
 
             
