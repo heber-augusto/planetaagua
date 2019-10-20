@@ -1,38 +1,243 @@
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="styles.css"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Planeta Água</title>
-  </head>
-  <body class="p-3">
-    <div class="container-fluid h-100 p-3">
-      <div class="row justify-content-center h-100">      
-        <div class="col-3 jumbotron card h-100 shadow" id="side">
-            <h2 id="title_h2">Pergunta:</h2>
-            <p id="pergunta"></p>
-            <div id="answers" class="list-group mt-3"></div>
-            <button id="btnAnswer" onclick="postAnswer()" type="button" class="btn btn-primary float-right mt-3">RESPONDER</button>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#features">Impactos</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                        <li><a href="#teams">Nosso Time</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div><!-- header content -->
+        </header><!-- header -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                    <h1>NASA Space Apps Challenge</h1>
+                    <p>Planeta Água foi um projeto criado para demonstrar os impactos do aumento do nível do mar.</p>
+                    <a href="https://2019.spaceappschallenge.org/challenges/earths-oceans/rising-water/teams/planeta-agua/project" class="btn btn-large">SAIBA MAIS</a>
+                </div><!-- banner text -->
+            </div>
         </div>
-        
-        
-        <div class="col island_box rounded shadow h-100 ml-3">
-          <img src="imgs/island0.png" class="island" id="island_image">
+    </section><!-- banner -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-tools"></span>
+                    <div class="feature-content">
+                        <h5>Easily Customised</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-desktop"></span>
+                    <div class="feature-content">
+                        <h5>Responsive Ready</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-lightbulb"></span>
+                    <div class="feature-content">
+                        <h5>Modern Design</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-genius"></span>
+                    <div class="feature-content">
+                        <h5>Clean Code</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-briefcase"></span>
+                    <div class="feature-content">
+                        <h5>Ready to Ship</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-download"></span>
+                    <div class="feature-content">
+                        <h5>Download for Free</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section><!-- features -->
+
+    <section id="quiz" class="section quiz">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="flexslider">
+                    <div class="col-md-4 quiz_box">
+                        <div class="jumbotron  h-100 card shadowsss" id="side">
+                            <h2 id="title_h2">Pergunta:</h2>
+                            <p id="pergunta"></p>
+                            <div id="answers" class="list-group mt-3"></div>
+                            <button id="btnAnswer" onclick="postAnswer()" type="button" class="btn btn-primary float-right mt-3">RESPONDER</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 no-padding">
+                        <img src="imgs/island0.png" class="rounded" width="100%" height="auto" id="island_image">
+                    </div>
+                </div><!-- flexslider -->
+            </div>
+        </div>
+    </section><!-- quiz -->
+
+    <section id="teams" class="section teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-1.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Ruth Wood</h4>
+                            <h5 class="role">Founder, CEO</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-2.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Timothy Reed</h4>
+                            <h5 class="role">Co-Founder, Developer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-3.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Victoria Valdez</h4>
+                            <h5 class="role">UI Designer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-4.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Beverly Little</h4>
+                            <h5 class="role">Data Scientist</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+            </div>
+        </div>
+    </section><!-- teams -->
+
+    <section id="download-wordpress" class="section download wordpress">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>Download as WordPress theme</h3>
+                <p>This template also available as WordPress theme</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h5>Location</h5>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h5>Share with Love</h5>
+                        <ul class="footer-share">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/kamal_chaneman"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kamalchaneman"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h5>Sobre o Planeta Água</h5>
+                        <p>Este foi um projeto criado para o NASA Space Apps Chanllange.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer top -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>Planeta Água - NASA Space Apps Chanllange 2019.</p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
     <!-- Game logic-->
     <script src="game.js"></script>
-  </body>
+</body>
 </html>

@@ -29,7 +29,7 @@ request.onload = function () {
 
     for(let i = 1; i <= MAX_ITENS; i++){
         let opt = document.createElement('div');
-        let txt = '<a href="#" onclick="onOptionSelected(this, ' + i + ')" class="list-group-item list-group-item-action">' + q['opcao' + i] + '</a>';
+        let txt = '<a onclick="onOptionSelected(this, ' + i + ')" class="list-group-item list-group-item-action">' + q['opcao' + i] + '</a>';
         opt.innerHTML = txt;
         opt.setAttribute("id", "opcao"+i);        
         opts.append(opt);
@@ -63,6 +63,7 @@ function postAnswer(){
 
     if(!lastItemSelected){
         alert("Selecione uma resposta");
+        return;
     }
     // This means 1 new row will be inserted into the Sheet
     const data = [
@@ -103,7 +104,7 @@ function postAnswer(){
 
       for(let i = 1; i <= MAX_ITENS; i++){
           let opt = document.getElementById('opcao' + i);
-          let txt = '<a href="#" onclick="onOptionSelected(this, ' + i + ')" class="list-group-item list-group-item-action">' + q['opcao' + i] + '</a>';
+          let txt = '<a onclick="onOptionSelected(this, ' + i + ')" class="list-group-item list-group-item-action">' + q['opcao' + i] + '</a>';
           opt.innerHTML = txt;
           opt.setAttribute("id", "opcao"+i);
           opts.append(opt);
