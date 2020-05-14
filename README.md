@@ -2,11 +2,6 @@ PLANETA ÁGUA: A COLLABORATIVE GAME TO DEMONSTRATE IMPACTS OF OUR DECISIONS ON I
 
 Some of our children and grandchildren are going to die! It's not what I do today that's going to change that, we need to do different for 100 years and it's not what you and I do that changes it, that's what everyone will do for the rest of their lives!
 
-http://planetaagua.co
-Project repository:
-
-https://github.com/ygordlp/planetaagua.git
-
 The game site was developed using html, javascript and css. Some frameworks and libraries, such as bootstrap, have been used to facilitate their creation.
 
 Two NASA databases were used to understand ocean level developments and rising temperatures:
